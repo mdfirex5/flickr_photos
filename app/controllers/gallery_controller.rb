@@ -26,7 +26,7 @@ class GalleryController < ApplicationController
     FlickRaw.api_key = FlickrConfig.config[:key]
     FlickRaw.shared_secret = FlickrConfig.config[:secret]
 
-    list = flickr.photos.search text: query_string, per_page: 20
+    list = flickr.photos.search tags: query_string, per_page: 20
 
     res_photos = []
 
