@@ -1,4 +1,10 @@
 class GalleryController < ApplicationController
+  require 'flickr_config'
+  require 'flickraw'
+
+  FlickRaw.api_key = FlickrConfig.config[:key]
+  FlickRaw.shared_secret = FlickrConfig.config[:secret]
+
   def index
   end
 
@@ -19,12 +25,6 @@ class GalleryController < ApplicationController
         (query_string && query_string.strip!) == ''
       return []
     end
-
-    require 'flickr_config'
-    require 'flickraw'
-
-    FlickRaw.api_key = FlickrConfig.config[:key]
-    FlickRaw.shared_secret = FlickrConfig.config[:secret]
 
     list = flickr.photos.search tags: query_string, per_page: 20
 

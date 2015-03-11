@@ -43,3 +43,6 @@ gem 'bootstrap-sass'
 
 # flickr_api
 gem 'flickraw'
+
+# authorization
+gem 'devise'

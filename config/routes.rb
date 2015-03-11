@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  get 'gallery/index'
+  root 'gallery#index'
 
+  get 'gallery/index'
   get 'gallery/search'
 
-  #root 'gallery#index'
+  devise_for :users
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
