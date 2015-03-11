@@ -1,0 +1,5 @@
+<% @photos.each do |p| %>
+  <%= link_to p[:big] do %>
+    <%= image_tag p[:square], alt: p[:title] %>
+  <% end %>
+<% end %>

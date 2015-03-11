@@ -3,6 +3,13 @@ class GalleryController < ApplicationController
   end
 
   def search
+    query_string = params[:q] && params[:q].strip || ''
+    if (query_string == '')
+      redirect_to action: 'index'
+      return
+    end
+
+    @photos = get_recent_photos query_string
   end
 
   def show
@@ -46,6 +53,6 @@ class GalleryController < ApplicationController
 
     threads.map(&:join)
 
-    photos
+    res_photos
   end
 end
