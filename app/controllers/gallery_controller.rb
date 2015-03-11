@@ -12,9 +12,6 @@ class GalleryController < ApplicationController
     @photos = get_recent_photos query_string
   end
 
-  def show
-  end
-
   private
 
   def get_recent_photos query_string

@@ -3,8 +3,6 @@ Rails.application.routes.draw do
 
   get 'gallery/search'
 
-  get 'gallery/show'
-
   #root 'gallery#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

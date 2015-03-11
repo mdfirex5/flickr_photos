@@ -1,2 +1,11 @@
 <h1>Gallery#search</h1>
 <p>Find me in app/views/gallery/search.html.erb</p>
+<div>
+  <% if @photos == [] %>
+    <p>
+      Nothing found :(
+    </p>
+  <% else %>
+    <%= render 'photos' %>
+  <% end %>
+</div>
