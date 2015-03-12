@@ -70,6 +70,7 @@ GEM
     minitest (5.5.1)
     multi_json (1.11.0)
     orm_adapter (0.5.0)
+    pg (0.18.1)
     rack (1.5.2)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -138,6 +139,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   magnific-popup-rails
+  pg
   rails (= 4.1.6)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

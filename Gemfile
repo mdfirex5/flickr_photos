@@ -5,6 +5,10 @@ group :development, :text do
   gem 'spring'
 end
 
+group :production do
+  gem 'pg'
+end
+
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'rails', '4.1.6'
