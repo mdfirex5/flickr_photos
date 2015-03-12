@@ -40,6 +40,7 @@ gem 'spring',        group: :development
 
 # bootstrap
 gem 'bootstrap-sass'
+gem 'bootstrap_form'
 
 # flickr_api
 gem 'flickraw'
