@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-group :development, :text do
+gem 'rails', '4.1.6'
+
+group :development do
   gem 'sqlite3'
   gem 'spring'
 end
@@ -9,9 +11,7 @@ group :production do
   gem 'pg'
 end
 
-gem 'sdoc', '~> 0.4.0',          group: :doc
-
-gem 'rails', '4.1.6'
+#gem 'sdoc', '~> 0.4.0',          group: :doc
 
 group :assets do
   gem 'sass-rails', '~> 4.0.3'
