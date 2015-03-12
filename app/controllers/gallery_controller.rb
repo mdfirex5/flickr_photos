@@ -16,6 +16,10 @@ class GalleryController < ApplicationController
     end
 
     @photos = get_recent_photos query_string
+
+    if @photos == []
+      redirect_to root_url, alert: 'Nothing found!'
+    end
   end
 
   private

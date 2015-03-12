@@ -47,3 +47,6 @@ gem 'flickraw'
 
 # authorization
 gem 'devise'
+
+# jsgallery
+gem 'magnific-popup-rails'

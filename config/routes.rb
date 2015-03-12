@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  root 'gallery#index'
 
-  get 'gallery/index'
-  get 'gallery/search'
+  root 'gallery#index'
+  get 'search' => 'gallery#search'
 
   devise_for :users
 
